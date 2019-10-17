@@ -88,11 +88,11 @@
               script.src = 'https://kitcathe.github.io/restaurants.js';
               document.getElementsByTagName('head')[0].appendChild(script);
 
-        var bounds = {
-          north: 10.3170356,
-          south: 10.2170356,
-          east: 123.7667854,
-          west: 123.8667854
+        /*var bounds = {
+          north: 10.324,
+          south: 44.490,
+          east: -78.443,
+          west: -78.649
         };
       
         var rectangle = new google.maps.Rectangle({
@@ -103,16 +103,34 @@
           fillOpacity   : 0.35,
           map :map,
           bounds : bounds,
+          editable : true
           //bounds: map.getBounds()
          /* bounds : {
             north: 10.32372,
             south: 10.30972,
             east: 123.881171,
             west: 123.89971
-          }*/
+          }//
+        });*/
+        
+        // Define the LatLng coordinates for the polygon.
+        var recCoords = [
+            {lat: 10.353000, lng: 123.746000 },
+            {lat: 10.277000, lng: 123.743000},
+            {lat: 10.232000, lng: 123.917000},
+            {lat: 10.3457215, lng: 123.9099912}
+        ];
+
+        // Construct the polygon.
+        var bermudaTriangle = new google.maps.Polygon({
+          paths: recCoords,
+          strokeColor: '#FF0000',
+          strokeOpacity: 0.8,
+          strokeWeight: 3,
+          fillColor: '#FF0000',
+          fillOpacity: 0.35
         });
-        
-        
+        bermudaTriangle.setMap(map);
 
         infowindow = new google.maps.InfoWindow({
           size: new google.maps.Size(150, 50),
