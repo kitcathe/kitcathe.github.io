@@ -96,12 +96,13 @@
         fillColor     : '#FF0000',
         fillOpacity   : 0.35,
         map :map,
-        bounds : {
+        bounds: map.getBounds()
+       /* bounds : {
           north: 10.32372,
           south: 10.30972,
           east: 123.881171,
           west: 123.89971
-        }
+        }*/
       });
 
         infowindow = new google.maps.InfoWindow({
