@@ -89,10 +89,10 @@
               document.getElementsByTagName('head')[0].appendChild(script);
 
         var bounds = {
-          north: 10.324,
-          south: 44.490,
-          east: -78.443,
-          west: -78.649
+          north: 10.353000,
+          south: 10.253000,
+          east: 123.646000,
+          west: 123.746000
         };
       
         var rectangle = new google.maps.Rectangle({
@@ -102,7 +102,8 @@
           fillColor     : '#FF0000',
           fillOpacity   : 0.35,
           map :map,
-          bounds: map.getBounds()
+          bounds : bounds
+          //bounds: map.getBounds()
          /* bounds : {
             north: 10.32372,
             south: 10.30972,
