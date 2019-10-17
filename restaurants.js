@@ -33,7 +33,7 @@ _callback({"type":"Feature",
 	{
 		"restaurant_name":"Siomai sa Tisa",
 		"specialty":"Siomai",
-		"type""Inato Resto"
+		"type":"Inato Resto",
 		"coordinates":[10.3014431,123.8687089]
 	},
 	{
