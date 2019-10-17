@@ -84,7 +84,7 @@
         directionsDisplay.setMap(map);
 
         var script = document.createElement('script');
-              script.src = 'http://localhost/navagis/restaurants.js';
+              script.src = 'https://kitcathe.github.io/restaurants.js';
               document.getElementsByTagName('head')[0].appendChild(script);
 
 
